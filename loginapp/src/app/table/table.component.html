@@ -1,0 +1,17 @@
+<h2>{{message}}</h2>
+
+<h2>Table</h2>
+<table>
+   <tr>
+       <th>ID</th>
+       <th>Name</th>
+       <th>Table Name</th>
+   </tr> 
+   <tr *ngFor="let user of table">
+       <td>{{user.id}}</td>
+       <td>{{user.name}}</td>
+       <td><span *ngFor="let new of user.Tables">{{new.table_name}}</span></td>
+   </tr>
+</table>
+  
+  
